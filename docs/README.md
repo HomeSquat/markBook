@@ -2,7 +2,7 @@
 home: true
 heroImage: /timg.jpg
 actionText: 翻看查阅 →
-actionLink: /zh/guide/
+actionLink: /git/
 features:
 - title: 总结经验
   details: 积累工作经验，争取有生之年踩10%的坑。

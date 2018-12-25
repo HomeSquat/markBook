@@ -11,9 +11,16 @@ module.exports = {
   },
   themeConfig: {
     sidebarDepth: 2, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
+    // displayAllHeaders: true,
     lastUpdated: 'Last Updated', // 文档更新时间：每个文件git最后提交的时间
     nav:[
-      { text: '前端算法', link: '/algorithm/' }, // 内部链接 以docs为根目录
+      {
+        text: '文档手册',
+        items: [
+          { text: 'Git操作', link: '/git/'}, // 内部链接 以docs为根目录
+          { text: 'JavaScript', link: '/JavaScript/' }
+        ]
+      },
       { text: '博客', link: 'http://blog.coderdong.cn/blog/' }, // 外部链接
       // 下拉列表
       {
@@ -22,6 +29,15 @@ module.exports = {
           { text: '高仿微信', link: 'https://github.com/HomeSquat/WChat-web' },
         ]
       }
-    ]
+    ],
+    sidebar: {
+      '/git/': [
+        '',     /* /foo/ */
+        'one'  /* /foo/one.html */
+      ],
+      '/JavaScript/': [
+          ''
+      ]
+    }
   }
 };
