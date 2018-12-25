@@ -19,8 +19,7 @@ module.exports = {
       {
         text: '代码仓库',
         items: [
-          { text: 'GitHub地址', link: 'https://github.com/OBKoro1' },
-          {text: '算法仓库', link: 'https://github.com/OBKoro1/Brush_algorithm'}
+          { text: '高仿微信', link: 'https://github.com/HomeSquat/WChat-web' },
         ]
       }
     ]
