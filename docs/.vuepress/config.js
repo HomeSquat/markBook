@@ -34,10 +34,12 @@ module.exports = {
       '/git/': [
         {
           title: 'Git手册',
-          collapsable: false,
+          collapsable: true,
           children: [
             '',
-            'one'
+            '安装',
+            '创建版本库',
+            '远程仓库'
           ]
         },
       ],
