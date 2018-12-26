@@ -10,7 +10,7 @@ module.exports = {
     lineNumbers: true // 代码块显示行号
   },
   themeConfig: {
-    sidebarDepth: 2, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
+    sidebarDepth: 1, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
     // displayAllHeaders: true,
     lastUpdated: 'Last Updated', // 文档更新时间：每个文件git最后提交的时间
     nav:[
@@ -32,11 +32,23 @@ module.exports = {
     ],
     sidebar: {
       '/git/': [
-        '',     /* /foo/ */
-        'one'  /* /foo/one.html */
+        {
+          title: 'Git手册',
+          collapsable: false,
+          children: [
+            '',
+            'one'
+          ]
+        },
       ],
       '/JavaScript/': [
-          ''
+        {
+          title: 'JavaScript手册',
+          collapsable: false,
+          children: [
+            '',
+          ]
+        },
       ]
     }
   }
