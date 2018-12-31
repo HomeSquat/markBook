@@ -54,6 +54,8 @@ module.exports = {
           collapsable: false,
           children: [
             '',
+            'JavaScript内置对象',
+            'BOM对象'
           ]
         },
       ]
